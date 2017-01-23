@@ -235,6 +235,12 @@ case "$1" in
 	echo PRODUCT_NAME=castor >> .tmp-config &&
 	repo_sync project-tablet
 	;;
+	
+	case "$1" in
+"xperia-p")
+	echo DEVICE=xperiap >> .tmp-config &&
+	repo_sync $1
+	;;
 
 *)
 	echo "Usage: $0 [-cdflnq] [-j <jobs>] [--force-sync] (device name)"
@@ -297,6 +303,7 @@ case "$1" in
 	echo - flamingo-l "(E3 L)"
 	echo - eagle-l "(M2 L)"
 	echo - seagull-l "(T3 L)"
+	echo - xperia-p
 	exit -1
 	;;
 esac
