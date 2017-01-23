@@ -297,6 +297,7 @@ case "$1" in
 	echo - flamingo-l "(E3 L)"
 	echo - eagle-l "(M2 L)"
 	echo - seagull-l "(T3 L)"
+	echo - nypon "(P KK)"
 	exit -1
 	;;
 esac
